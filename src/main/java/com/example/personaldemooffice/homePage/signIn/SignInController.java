@@ -31,7 +31,7 @@ public class SignInController {
     @PostMapping("/saveSignInToBase")
     public String saveSignInBaseNote(@RequestParam(value = "username") String username, @RequestParam(value = "password") String password) {
         signInRootService.saveSignInUserToBase(username, password);
-        return "redirect:/";
+        return "/dashboard/mainDashboard";
     }
 
 //    pass to signUp page
