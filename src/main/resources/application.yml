@@ -1,0 +1,21 @@
+
+server:
+  port: 1305
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/personal_demo_office
+    username: demoAccount
+    password: demoaccount
+
+    properties:
+      hibernate:
+
+        dialect=org:
+          hibernate:
+            dialect:
+              PostgreSQLDialect:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
